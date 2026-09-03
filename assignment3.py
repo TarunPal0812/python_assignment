@@ -9,7 +9,7 @@ def flatten_dict(d, parent_key='', sep='_'):
     return dict(items)
 
 
-nested = {'a': 1, 'b': {'c': 2, 'd': {'e': 3}}}
+nested =  {"a": 10, "b": {"c": {"d": 20}}, "e": 100} 
 print(flatten_dict(nested, sep='.'))
 
-# Output: {'a': 1, 'b.c': 2, 'b.d.e': 3}
+# Output: {'a': 10, 'b.c.d': 20, 'e': 100}
