@@ -43,7 +43,7 @@ def main() -> None:
     ]
 
     try:
-        # Add contact
+    
         add_contact(
             contacts,
             "Ashmita",
@@ -51,11 +51,11 @@ def main() -> None:
             "ashmita@example.com"
         )
 
-        # List contacts
+    
         print("All Contacts:")
         list_contacts(contacts)
 
-        # Search contact
+     
         contact = search_contact(contacts, "Tarun")
 
         print("Search Result:")
@@ -64,7 +64,7 @@ def main() -> None:
         print("Email:", contact["email"])
         print()
 
-        # Update contact
+    
         update_contact(
             contacts,
             "Tarun",
@@ -75,7 +75,7 @@ def main() -> None:
         print("After Update:")
         list_contacts(contacts)
 
-        # Delete contact
+       
         delete_contact(contacts, "Ashmita")
 
         print("After Delete:")

@@ -29,19 +29,19 @@ def main() -> None:
     try:
         number = int(input("Enter number: "))
 
-        # Handle negative numbers
+     
         if number < 0:
             number = abs(number)
             print("Negative number converted to:", number)
 
-        # Handle zero
+  
         if number == 0:
             print("Even: Yes")
             print("Prime: No")
             print("Factors: Not defined")
             print("Prime Factors: Not defined")
 
-        # Handle one
+  
         elif number == 1:
             print("Even: No")
             print("Prime: No")
